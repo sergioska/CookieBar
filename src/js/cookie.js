@@ -34,23 +34,23 @@ CookieComponent.controller('CookieController', function($scope, $element, $windo
 	$scope.$on('handlePolicy', function (event, args){
 		/*jshint -W087 */
 		//debugger;
-    	var size = {};
-      	var modalInstance = $modal.open({
-      		templateUrl: 'policyContent.html',
-      		controller: ModalInstancePolicyController,
-      		size: size,
-      		resolve: {
-      			Data: function () {
-          				return sharedDataServiceCookie.hasCookie;
-          			}
-          		}
-    	});
+		var size = {};
+		var modalInstance = $modal.open({
+			templateUrl: 'policyContent.html',
+			controller: ModalInstancePolicyController,
+			size: size,
+			resolve: {
+				Data: function () {
+						return sharedDataServiceCookie.hasCookie;
+					}
+				}
+		});
 
-    	modalInstance.result.then(function () {
-      
-    	}, function () {
-    		$log.info('Modal dismissed at: ' + new Date());
-    	});    
+		modalInstance.result.then(function () {
+	  
+		}, function () {
+			$log.info('Modal dismissed at: ' + new Date());
+		});    
 	});
 
 	$scope.getCookie = function() {
@@ -97,11 +97,11 @@ CookieComponent.controller('CookieController', function($scope, $element, $windo
 // It is not the same as the $modal service used above.
 var ModalInstancePolicyController = function ($scope, $modalInstance, $cookies, sharedDataServiceCookie) {
 
-  	$scope.close = function () {
-  		$cookies.put('cookieConsent', 'y');
-  		sharedDataServiceCookie.hasCookie = true;
-    	$modalInstance.dismiss();
-  	};
+	$scope.close = function () {
+		$cookies.put('cookieConsent', 'y');
+		sharedDataServiceCookie.hasCookie = true;
+		$modalInstance.dismiss();
+	};
 
 
 };
