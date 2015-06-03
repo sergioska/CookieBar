@@ -12,7 +12,7 @@
     "jquery": "latest",
     "angular": "latest",
     "angular-cookies": "latest",
-    "cookie-bar": "latest"
+    "angular-bootstrap": "~0.13.0"
   },
   "keywords": [
     "angularjs",

@@ -36,13 +36,25 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'bower_components/jquery/dist',	
 						src: ['jquery.min.js'], 
-						dest: 'dist/js'
+						dest: 'dist/js/vendors'
 					},
 					{
 						expand: true,
 						cwd: 'bower_components/angular',
 						src: ['angular.min.js'],
-						dest: 'dist/js'	
+						dest: 'dist/js/vendors'	
+					},
+					{
+						expand: true,
+						cwd: 'bower_components/angular-cookies',
+						src: ['angular-cookies.min.js'],
+						dest: 'dist/js/vendors'	
+					},
+					{
+						expand: true,
+						cwd: 'bower_components/angular-bootstrap',
+						src: ['ui-bootstrap-tpls.min.js'],
+						dest: 'dist/js/vendors'	
 					},
 					{
 						expand: true,

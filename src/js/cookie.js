@@ -1,4 +1,4 @@
-var CookieComponent = angular.module('CookieComponent', ['ngCookies']);
+var CookieComponent = angular.module('CookieComponent', ['ui.bootstrap', 'ngCookies']);
 CookieComponent.factory('sharedDataServiceCookie', function($rootScope) {
 		var sharedDataServiceCookie = {};
 		sharedDataServiceCookie.prepForEmitPolicy = function() {
@@ -112,7 +112,7 @@ CookieComponent.directive('cookie', ['$document', '$cookies', 'sharedDataService
 		restrict: 'E',
 		replace: true,
 		transclude: true,
-		templateUrl: "src/js/templates/cookiebar.html",
+		templateUrl: "dist/js/templates/cookiebar.html",
 		scope: {color: "@", ngModel: "=", moreText: "@", closeText: "@", bodyText: "@", withScroll: "@"},
 		controller: 'CookieController',
 		link: function(scope, element, attr, ngModel) {
