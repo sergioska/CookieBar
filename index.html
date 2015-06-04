@@ -19,10 +19,9 @@
   <script type="text/javascript" src="dist/js/cookie-bar.js"></script>
   <script type="text/javascript" src="example/js/controller.js"></script>
   </head>
-  <body>
+  <body ng-app="appTest">
 
     <div ng-controller="TestController">
-      <p>test</p>
       <cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website." ng-model="cookie"></cookie>
     </div>
     <div class="wrapper">
