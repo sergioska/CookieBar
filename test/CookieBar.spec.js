@@ -2,7 +2,7 @@
 
 describe('CookieBar: ', function() {
 	var scope, $rootScope, $compile;
-	var elem, win, modal, cookies, log, cookieService;
+	var elem, win, modal, cookies, log;
 	beforeEach(module('templates'));
 	beforeEach(module('ngCookies'));
 	beforeEach(module('ui.bootstrap'));
@@ -14,20 +14,6 @@ describe('CookieBar: ', function() {
 		// this is very important!!!
 		scope = $rootScope;
 		cookies = $cookies;
-
-		/* mocking cookie service */
-		/*
-		var mockCookieService = {
-			_cookies : {},
-			get: function(key) {
-				return this._cookies[key];
-			},
-			put: function(key, value) {
-				this._cookies[key] = value;
-			}
-		};
-		cookieService = mockCookieService;
-		*/
 
 	}));
 
