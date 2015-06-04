@@ -1,0 +1,40 @@
+{
+  "name": "CookieBar",
+  "authors": [
+    "Ska <sergiosicari@gmail.com>"
+  ],
+  "description": "Cookie bar to cookie law",
+  "moduleType": [
+    "amd"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "angular-cookies": "latest",
+    "angular-bootstrap": "~0.13.0"
+  },
+  "keywords": [
+    "angularjs",
+    "cookie",
+    "law",
+    "bar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/sergioska/CookieBar",
+  "_release": "e8d02b50f2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e8d02b50f27f6e8db6f637b1e7437354438ebdd3"
+  },
+  "_source": "git://github.com/sergioska/CookieBar.git",
+  "_target": "*",
+  "_originalSource": "cookie-bar"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "CookieBar",
+  "version": "0.0.0",
+  "authors": [
+    "Ska <sergiosicari@gmail.com>"
+  ],
+  "description": "Cookie bar to cookie law",
+  "moduleType": [
+    "amd"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "angular-cookies": "latest",
+    "angular-bootstrap": "~0.13.0"
+  },
+  "keywords": [
+    "angularjs",
+    "cookie",
+    "law",
+    "bar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

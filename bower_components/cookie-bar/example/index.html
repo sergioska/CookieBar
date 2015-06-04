@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Testing cookie bar</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+	<script type="text/javascript" src="dist/js/vendors/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/js/vendors/angular.min.js"></script>
+	<script type="text/javascript" src="dist/js/vendors/angular-cookies.min.js"></script>
+	<script type="text/javascript" src="dist/js/vendors/ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="dist/js/cookie-bar.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body ng-app="appTest">
+	<div ng-controller="TestController">
+		<p>Cookie bar</p>
+		<cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website." ng-model="cookie"></cookie>
+	</div>
+</body>
+</html>

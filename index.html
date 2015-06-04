@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Cookiebar by sergioska</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css"> 
     <link rel="stylesheet" href="stylesheets/github-light.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script type="text/javascript" src="dist/js/vendors/angular.min.js"></script>
+  <script type="text/javascript" src="dist/js/vendors/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="dist/js/vendors/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="dist/js/cookie-bar.js"></script>
+  <script type="text/javascript" src="example/js/controller.js"></script>
   </head>
   <body>
+
+    <div ng-controller="TestController">
+      <cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website." ng-model="cookie"></cookie>
+    </div>
     <div class="wrapper">
       <header>
         <h1>Cookiebar</h1>
