@@ -21,21 +21,21 @@
   </head>
   <body ng-app="appTest">
 
+    <div ng-controller="TestController">
+      <div ng-if="cookie" ng-cloak>
+        <div style="width: auto; height: auto; border: 2px dashed grey;">
+          <p>If you see me, you have accepted cookie!</p>
+        </div>
+      </div>
+      <cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website." ng-model="cookie"></cookie>
+    </div>
+
     <div class="wrapper">
       <header>
         <h1>Cookiebar</h1>
         <p>An angularjs directive to manage cookie consent with a bar</p>
 
         <p class="view"><a href="https://github.com/sergioska/CookieBar">View the Project on GitHub <small>sergioska/CookieBar</small></a></p>
-
-        <div ng-controller="TestController">
-          <div ng-if="cookie">
-            <div style="width: auto; height: auto; border: 2px dashed grey;">
-              <p>If you see me, you have accepted cookie!</p>
-            </div>
-          </div>
-          <cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website." ng-model="cookie"></cookie>
-        </div>
 
         <ul>
           <li><a href="https://github.com/sergioska/CookieBar/zipball/master">Download <strong>ZIP File</strong></a></li>
