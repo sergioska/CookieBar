@@ -22,13 +22,17 @@ describe('CookieBar: ', function() {
 		var  html, element, controller;
 		beforeEach(inject(function($controller) {
 
-			controller = $controller('CookieController', {	$scope: scope, 
-															$element: elem, 
-															$window: win, 
-															$modal: modal, 
-															$log: log, 
-															$cookies: cookies, 
-															sharedDataServiceCookie: {}} );
+			controller = $controller('CookieController', 
+										{	
+											$scope: scope, 
+											$element: elem, 
+											$window: win, 
+											$modal: modal, 
+											$log: log, 
+											$cookies: cookies, 
+											sharedDataServiceCookie: {}
+										} 
+									);
 			scope.$digest();
 
 			html = angular.element('<cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website."></cookie>');
