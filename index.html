@@ -22,6 +22,11 @@
   <body ng-app="appTest">
 
     <div ng-controller="TestController">
+      <div ng-if="cookie">
+        <div style="width: auto; height: auto; border: 2px dashed grey;">
+          <p>If you see me, you have accepted cookie!</p>
+        </div>
+      </div>
       <cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website." ng-model="cookie"></cookie>
     </div>
     <div class="wrapper">
