@@ -10,6 +10,8 @@ module.exports = function(config) {
 		// list of files / patterns to load in the browser
 		files: [
 			"bower_components/angular/angular.min.js",
+			"bower_components/angular-cookies/angular-cookies.min.js",
+			"bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js",
 			"bower_components/angular-mocks/angular-mocks.js",
 			"src/js/*.js",
 			"bower_components/cookie-bar/src/js/templates/*.html",
