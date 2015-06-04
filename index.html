@@ -28,7 +28,6 @@
         </div>
       </div>
       <cookie more-text="More information" close-text="Close" body-text="this site use cookies to ensure you get the best experience on our website." ng-model="cookie"></cookie>
-    </div>
 
     <div class="wrapper">
       <header>
@@ -42,6 +41,15 @@
           <li><a href="https://github.com/sergioska/CookieBar/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/sergioska/CookieBar">View On <strong>GitHub</strong></a></li>
         </ul>
+
+        <div ng-controller="TestController">
+        <div ng-if="cookie" ng-cloak>
+          <div class="highlight highlight-sh" style="hight: 300px;">
+            <pre>If you see me, you have accepted cookie!</pre>
+          </div>
+        </div>
+        </div>
+
       </header>
       <section>
         <h1>
@@ -100,6 +108,6 @@ grunt client</pre></div>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+  </div>  
   </body>
 </html>
