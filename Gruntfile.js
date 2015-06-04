@@ -63,8 +63,12 @@ module.exports = function(grunt) {
 						dest: 'dist/js/templates'
 					}
 				]
+			},
+			example: {
+				src: 'dist/**',
+				dest: 'example/'
 			}
-	},
+		},
 		uglify: {
 			client: {
 				files: {
@@ -97,6 +101,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-karma');
 
 	grunt.registerTask('client', ['jshint:client', 'concat:client', 'copy:client', 'uglify:client']);
+	grunt.registerTask('example', ['client', 'copy:example']);
 	grunt.registerTask('test', ['karma']);
 
 }
